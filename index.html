@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link href="https://fonts.cdnfonts.com/css/aaargh" rel="stylesheet" />
+
+        <title>Boat Speed Calculator</title>
+    </head>
+    <body>
+        <script src="./script.js"></script>
+        <h1>Boat Speed Calculator</h1>
+        <hr />
+
+        <div id="centeredForm">
+            <form id="calculator-form">
+                <label for="weight">Weight (lbs):<br /></label>
+                <input
+                    type="number"
+                    id="weight"
+                    placeholder="Enter weight (lbs)"
+                    required
+                /><br /><br />
+
+                <label for="horsepower">Horsepower (max 750):</label>
+                <input
+                    type="number"
+                    id="horsepower"
+                    placeholder="Enter horsepower (max 750)"
+                    required
+                /><br /><br />
+
+                <label for="boat-type">Boat Type:<br /></label>
+                <select id="boat-type" name="boat-type">
+                    <option value="225">Heavy V-Bottom (225)</option>
+                    <option value="250">Fast V-Bottom (250)</option>
+                    <option value="275">Catamaran (275)</option>
+                    <option value="300">Fast Catamaran (300)</option></select
+                ><br /><br />
+
+                <button type="button" onclick="calculateSpeed()">
+                    Calculate Speed
+                </button>
+            </form>
+
+            <p>Calculated Speed: <span id="calculated-speed"></span></p>
+        </div>
+    </body>
+</html>
