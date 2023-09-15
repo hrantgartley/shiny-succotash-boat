@@ -34,3 +34,11 @@ function calculateSpeed() {
     speed.toFixed(2) + " knots";
   form.reset();
 }
+
+const delayButton = () => {
+  const button = document.getElementById("calculate-button");
+  button.disabled = true;
+  setTimeout(() => {
+    button.disabled = false;
+  }, 3000);
+};
