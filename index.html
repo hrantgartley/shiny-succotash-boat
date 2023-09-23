@@ -1,28 +1,28 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles.css" />
-        <link href="https://fonts.cdnfonts.com/css/aaargh" rel="stylesheet" />
-        <link rel="icon" href="./boat.svg" />
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="./styles.css" >
+        <link href="https://fonts.cdnfonts.com/css/aaargh" rel="stylesheet" >
+        <link rel="icon" href="./boat.svg">
 
         <title>Boat Speed Calculator</title>
     </head>
     <body>
         <script src="./script.js"></script>
         <h1>Boat Speed Calculator</h1>
-        <hr />
+        <hr >
 
         <div id="centeredForm">
             <form id="calculator-form">
-                <label for="weight">Weight (lbs):<br /></label>
+                <label for="weight">Weight (lbs):<br ></label>
                 <input
                     type="number"
                     id="weight"
                     placeholder="Enter weight (lbs)"
                     required
-                /><br /><br />
+                ><br ><br>
 
                 <label for="horsepower">Horsepower (max 750):</label>
                 <input
@@ -30,15 +30,15 @@
                     id="horsepower"
                     placeholder="Enter horsepower (max 750)"
                     required
-                /><br /><br />
+                ><br ><br >
 
-                <label for="boat-type">Boat Type:<br /></label>
+                <label for="boat-type">Boat Type:<br ></label>
                 <select id="boat-type" name="boat-type">
                     <option value="225">Heavy V-Bottom (225)</option>
                     <option value="250">Fast V-Bottom (250)</option>
                     <option value="275">Catamaran (275)</option>
                     <option value="300">Fast Catamaran (300)</option></select
-                ><br /><br />
+                ><br ><br >
 
                 <button type="button" onclick="calculateSpeed()">
                     Calculate Speed
